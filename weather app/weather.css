@@ -1,0 +1,123 @@
+body {
+    font-family: cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(120deg,#2213a5,#870385);
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: repeating-linear-gradient(180deg,#d60bc5,#0f1cd5);
+    border-radius: 17px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    max-width: 400px;
+    min-width: 360px;
+    backdrop-filter: blur(50px);
+}
+h1,label,p {
+    color: black;
+    margin: 8px 0;
+}
+
+
+#cityInput {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border:2px solid#727272;
+    border-radius: 10px;
+}
+
+button {
+    font-family: cursive,sans-serif;
+border: none;
+outline: none;
+margin-left: 5px;
+padding: 10px;
+background: #080708;
+color: rgb(255, 255, 255);
+cursor: pointer;
+border-radius: 20px;
+}
+
+button:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+#temp-div p {
+    font-size: 25px;
+    /* margin-top: -30px; */
+    font-family: cursive,sans-serif;
+}
+#weather-info p {
+    font-size: 25px;
+    /* margin-top: -30px; */
+    font-family: cursive,sans-serif;
+}
+#weather-info {
+    font-size: 10px;
+}
+#weather-icon {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: scroll;
+    scrollbar-color: #540872;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+.hourly-item {
+    flex: 0 0 auto ;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+.hourly-img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+#hourly-heading {
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+
+/* #result {
+    margin-top: 20px;
+} */
+#hourly-forecast::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar (for horizontal scrollbar) */
+}
+
+#hourly-forecast::-webkit-scrollbar-track {
+    background: #081190; /* Track color */
+    border-radius: 10px;
+}
+
+#hourly-forecast::-webkit-scrollbar-thumb {
+    background-color: #5320a5; /* Thumb color */
+    border-radius: 10px; /* Roundness of the scroll thumb */
+    border: 2px solid #cb92ae; /* Border around the thumb */
+}
+
+#hourly-forecast::-webkit-scrollbar-thumb:hover {
+    background: #612960; /* Thumb color on hover */
+}
